@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		BE39E3C023C474FA001949BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3BF23C474FA001949BC /* AppDelegate.swift */; };
 		BE39E3C223C474FA001949BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3C123C474FA001949BC /* SceneDelegate.swift */; };
-		BE39E3C423C474FA001949BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3C323C474FA001949BC /* ViewController.swift */; };
 		BE39E3C723C474FA001949BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE39E3C523C474FA001949BC /* Main.storyboard */; };
 		BE39E3C923C474FF001949BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE39E3C823C474FF001949BC /* Assets.xcassets */; };
 		BE39E3CC23C474FF001949BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE39E3CA23C474FF001949BC /* LaunchScreen.storyboard */; };
 		BE39E3D723C474FF001949BC /* MyMoodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3D623C474FF001949BC /* MyMoodyTests.swift */; };
 		BE39E3E223C474FF001949BC /* MyMoodyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3E123C474FF001949BC /* MyMoodyUITests.swift */; };
+		BE39E3F323C475BB001949BC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3F223C475BB001949BC /* RootViewController.swift */; };
+		BE39E3F523C47A77001949BC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3F423C47A77001949BC /* CameraViewController.swift */; };
+		BE39E3F823C47AC0001949BC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3F723C47AC0001949BC /* CameraView.swift */; };
+		BE39E3FA23C4824C001949BC /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3F923C4824C001949BC /* MoodsTableViewController.swift */; };
+		BE39E3FC23C483A0001949BC /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3FB23C483A0001949BC /* MoodTableViewCell.swift */; };
+		BE39E3FE23C483CB001949BC /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3FD23C483CB001949BC /* MoodView.swift */; };
+		BE39E40023C4878A001949BC /* MoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3FF23C4878A001949BC /* MoodDetailViewController.swift */; };
+		BE39E40423C48C54001949BC /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE39E40223C48C54001949BC /* Moody.xcdatamodeld */; };
+		BECEEA2323C5672000D7FE55 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEEA2223C5672000D7FE55 /* Mood.swift */; };
+		BECEEA2523C5697900D7FE55 /* MoodyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEEA2423C5697900D7FE55 /* MoodyStack.swift */; };
+		BECEEA6723C5744E00D7FE55 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEEA6623C5744E00D7FE55 /* SegueHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,6 @@
 		BE39E3BC23C474FA001949BC /* MyMoody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMoody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE39E3BF23C474FA001949BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE39E3C123C474FA001949BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE39E3C323C474FA001949BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE39E3C623C474FA001949BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE39E3C823C474FF001949BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE39E3CB23C474FF001949BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		BE39E3DD23C474FF001949BC /* MyMoodyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMoodyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE39E3E123C474FF001949BC /* MyMoodyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoodyUITests.swift; sourceTree = "<group>"; };
 		BE39E3E323C474FF001949BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE39E3F223C475BB001949BC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		BE39E3F423C47A77001949BC /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		BE39E3F723C47AC0001949BC /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		BE39E3F923C4824C001949BC /* MoodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
+		BE39E3FB23C483A0001949BC /* MoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
+		BE39E3FD23C483CB001949BC /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
+		BE39E3FF23C4878A001949BC /* MoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailViewController.swift; sourceTree = "<group>"; };
+		BE39E40323C48C54001949BC /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
+		BECEEA2223C5672000D7FE55 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		BECEEA2423C5697900D7FE55 /* MoodyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyStack.swift; sourceTree = "<group>"; };
+		BECEEA6623C5744E00D7FE55 /* SegueHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +119,12 @@
 		BE39E3BE23C474FA001949BC /* MyMoody */ = {
 			isa = PBXGroup;
 			children = (
+				BECEEA6523C5743800D7FE55 /* Helpers */,
+				BE39E40123C48C35001949BC /* Model */,
+				BE39E3F623C47A8A001949BC /* Views */,
+				BE39E3F123C4753B001949BC /* ViewControllers */,
 				BE39E3BF23C474FA001949BC /* AppDelegate.swift */,
 				BE39E3C123C474FA001949BC /* SceneDelegate.swift */,
-				BE39E3C323C474FA001949BC /* ViewController.swift */,
 				BE39E3C523C474FA001949BC /* Main.storyboard */,
 				BE39E3C823C474FF001949BC /* Assets.xcassets */,
 				BE39E3CA23C474FF001949BC /* LaunchScreen.storyboard */,
@@ -126,6 +149,45 @@
 				BE39E3E323C474FF001949BC /* Info.plist */,
 			);
 			path = MyMoodyUITests;
+			sourceTree = "<group>";
+		};
+		BE39E3F123C4753B001949BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE39E3F223C475BB001949BC /* RootViewController.swift */,
+				BE39E3F423C47A77001949BC /* CameraViewController.swift */,
+				BE39E3F923C4824C001949BC /* MoodsTableViewController.swift */,
+				BE39E3FF23C4878A001949BC /* MoodDetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE39E3F623C47A8A001949BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE39E3F723C47AC0001949BC /* CameraView.swift */,
+				BE39E3FB23C483A0001949BC /* MoodTableViewCell.swift */,
+				BE39E3FD23C483CB001949BC /* MoodView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BE39E40123C48C35001949BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE39E40223C48C54001949BC /* Moody.xcdatamodeld */,
+				BECEEA2223C5672000D7FE55 /* Mood.swift */,
+				BECEEA2423C5697900D7FE55 /* MoodyStack.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BECEEA6523C5743800D7FE55 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BECEEA6623C5744E00D7FE55 /* SegueHandler.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE39E3C423C474FA001949BC /* ViewController.swift in Sources */,
 				BE39E3C023C474FA001949BC /* AppDelegate.swift in Sources */,
+				BE39E3F523C47A77001949BC /* CameraViewController.swift in Sources */,
 				BE39E3C223C474FA001949BC /* SceneDelegate.swift in Sources */,
+				BECEEA2323C5672000D7FE55 /* Mood.swift in Sources */,
+				BE39E3FE23C483CB001949BC /* MoodView.swift in Sources */,
+				BECEEA2523C5697900D7FE55 /* MoodyStack.swift in Sources */,
+				BE39E40023C4878A001949BC /* MoodDetailViewController.swift in Sources */,
+				BE39E3F823C47AC0001949BC /* CameraView.swift in Sources */,
+				BECEEA6723C5744E00D7FE55 /* SegueHandler.swift in Sources */,
+				BE39E40423C48C54001949BC /* Moody.xcdatamodeld in Sources */,
+				BE39E3FA23C4824C001949BC /* MoodsTableViewController.swift in Sources */,
+				BE39E3FC23C483A0001949BC /* MoodTableViewCell.swift in Sources */,
+				BE39E3F323C475BB001949BC /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +662,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE39E40223C48C54001949BC /* Moody.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE39E40323C48C54001949BC /* Moody.xcdatamodel */,
+			);
+			currentVersion = BE39E40323C48C54001949BC /* Moody.xcdatamodel */;
+			path = Moody.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BE39E3B423C474FA001949BC /* Project object */;
 }
