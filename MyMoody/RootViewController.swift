@@ -33,13 +33,30 @@ class RootViewController: UIViewController, SegueHandler {
             nc.delegate = self
         case .embedCamera:
             guard let vc = segue.destination as? CameraViewController else { fatalError("must be camera view controller") }
+            cameraViewController = vc
+            cameraViewController?.delegate = self
         }
     }
     
+    fileprivate var cameraViewController: CameraViewController?
+    
+    fileprivate func setCameraVisibility(_ visible: Bool) {
+        hideCameraConstraint.isActive = !visible
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .beginFromCurrentState, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
 }
 
 extension RootViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        let cameraVisible = (viewController as? MoodDetailViewController) == nil
+        setCameraVisibility(cameraVisible)
+    }
+}
+
+extension RootViewController: CameraViewControllerDelegate {
+    func didCapture(_ image: UIImage) {
         
     }
 }

@@ -33,7 +33,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ghp-bd-Szs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="585" id="3Qi-c4-Ti5"/>
                             <constraint firstItem="BOH-MY-SLS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CZh-gr-PJs"/>
                             <constraint firstItem="Ghp-bd-Szs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I3R-GL-NG5"/>
                             <constraint firstAttribute="trailing" secondItem="Ghp-bd-Szs" secondAttribute="trailing" id="J9O-hl-pgO"/>
@@ -208,6 +207,9 @@
                                     <constraint firstItem="P7c-x5-51v" firstAttribute="centerX" secondItem="2nh-Sy-z6n" secondAttribute="centerX" id="eqm-PK-y6d"/>
                                     <constraint firstAttribute="bottom" secondItem="P7c-x5-51v" secondAttribute="bottom" constant="8" id="exJ-OC-6p8"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="label" destination="P7c-x5-51v" id="zWU-PO-jnF"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

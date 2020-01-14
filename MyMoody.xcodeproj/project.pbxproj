@@ -22,9 +22,12 @@
 		BE39E3FE23C483CB001949BC /* MoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3FD23C483CB001949BC /* MoodView.swift */; };
 		BE39E40023C4878A001949BC /* MoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE39E3FF23C4878A001949BC /* MoodDetailViewController.swift */; };
 		BE39E40423C48C54001949BC /* Moody.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE39E40223C48C54001949BC /* Moody.xcdatamodeld */; };
+		BEAD2DA923C6B9D500B0F331 /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD2DA823C6B9D500B0F331 /* Managed.swift */; };
+		BEAD2DAB23C6C51800B0F331 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD2DAA23C6C51800B0F331 /* TableViewDataSource.swift */; };
 		BECEEA2323C5672000D7FE55 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEEA2223C5672000D7FE55 /* Mood.swift */; };
 		BECEEA2523C5697900D7FE55 /* MoodyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEEA2423C5697900D7FE55 /* MoodyStack.swift */; };
 		BECEEA6723C5744E00D7FE55 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEEA6623C5744E00D7FE55 /* SegueHandler.swift */; };
+		BECEEA6923C5BDCE00D7FE55 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECEEA6823C5BDCE00D7FE55 /* CaptureSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +69,12 @@
 		BE39E3FD23C483CB001949BC /* MoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodView.swift; sourceTree = "<group>"; };
 		BE39E3FF23C4878A001949BC /* MoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailViewController.swift; sourceTree = "<group>"; };
 		BE39E40323C48C54001949BC /* Moody.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Moody.xcdatamodel; sourceTree = "<group>"; };
+		BEAD2DA823C6B9D500B0F331 /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
+		BEAD2DAA23C6C51800B0F331 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		BECEEA2223C5672000D7FE55 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		BECEEA2423C5697900D7FE55 /* MoodyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyStack.swift; sourceTree = "<group>"; };
 		BECEEA6623C5744E00D7FE55 /* SegueHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
+		BECEEA6823C5BDCE00D7FE55 /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 		BE39E3BE23C474FA001949BC /* MyMoody */ = {
 			isa = PBXGroup;
 			children = (
+				BEAD2DA723C6B98000B0F331 /* Core Data Helpers */,
 				BECEEA6523C5743800D7FE55 /* Helpers */,
 				BE39E40123C48C35001949BC /* Model */,
 				BE39E3F623C47A8A001949BC /* Views */,
@@ -182,10 +189,20 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		BEAD2DA723C6B98000B0F331 /* Core Data Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BEAD2DA823C6B9D500B0F331 /* Managed.swift */,
+				BEAD2DAA23C6C51800B0F331 /* TableViewDataSource.swift */,
+			);
+			name = "Core Data Helpers";
+			sourceTree = "<group>";
+		};
 		BECEEA6523C5743800D7FE55 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				BECEEA6623C5744E00D7FE55 /* SegueHandler.swift */,
+				BECEEA6823C5BDCE00D7FE55 /* CaptureSession.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -323,9 +340,12 @@
 			files = (
 				BE39E3C023C474FA001949BC /* AppDelegate.swift in Sources */,
 				BE39E3F523C47A77001949BC /* CameraViewController.swift in Sources */,
+				BEAD2DAB23C6C51800B0F331 /* TableViewDataSource.swift in Sources */,
 				BE39E3C223C474FA001949BC /* SceneDelegate.swift in Sources */,
 				BECEEA2323C5672000D7FE55 /* Mood.swift in Sources */,
+				BEAD2DA923C6B9D500B0F331 /* Managed.swift in Sources */,
 				BE39E3FE23C483CB001949BC /* MoodView.swift in Sources */,
+				BECEEA6923C5BDCE00D7FE55 /* CaptureSession.swift in Sources */,
 				BECEEA2523C5697900D7FE55 /* MoodyStack.swift in Sources */,
 				BE39E40023C4878A001949BC /* MoodDetailViewController.swift in Sources */,
 				BE39E3F823C47AC0001949BC /* CameraView.swift in Sources */,
